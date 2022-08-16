@@ -13,7 +13,7 @@ RUN dpkg --add-architecture i386 && \
 
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    apt-utils \
+    apt-utils file libc6-dev lib32stdc++6 lib32z1 \
     software-properties-common git curl bzip2 gcc g++ binutils make autoconf openssl \
     libssl-dev ant libopus0 libpcre3 libpcre3-dev build-essential nasm libc6:i386 libstdc++6:i386 zlib1g:i386 \
     openjdk-8-jdk unzip
