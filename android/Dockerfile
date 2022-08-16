@@ -5,11 +5,15 @@ FROM ubuntu:latest
 ##############################
 
 RUN dpkg --add-architecture i386 && \
+    apt-get clean && \
+    apt-get -f install && \
     apt-get -y upgrade && \
     apt-get -y dist-upgrade && \
     apt-get update
 
+
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install \
+    apt-utils \
     software-properties-common git curl bzip2 gcc g++ binutils make autoconf openssl \
     libssl-dev ant libopus0 libpcre3 libpcre3-dev build-essential nasm libc6:i386 libstdc++6:i386 zlib1g:i386 \
     openjdk-8-jdk unzip
@@ -26,7 +30,7 @@ ENV ANDROID_SETUP_APIS "23 25"
 ENV ANDROID_BUILD_TOOLS_VERSION 25
 ENV ANDROID_TARGET_API 23
 
-ENV PJSIP_DOWNLOAD_URL "https://github.com/pjsip/pjproject/archive/refs/tags/2.7.2.tar.gz"
+ENV PJSIP_DOWNLOAD_URL "https://github.com/pjsip/pjproject/archive/refs/tags/2.12.1.tar.gz"
 
 ENV SWIG_DOWNLOAD_URL "http://prdownloads.sourceforge.net/swig/swig-3.0.7.tar.gz"
 
@@ -79,9 +83,9 @@ RUN cd /sources/android_sdk/tools && \
 
 # Download Pjsip
 RUN cd /sources/pjsip && \
-    curl -L -# -o pjsip.tar.bz2 "$PJSIP_DOWNLOAD_URL" && \
-    tar xjf pjsip.tar.bz2 && \
-    rm -rf pjsip.tar.bz2 && \
+    curl -L -# -o pjsip.tar.gz "$PJSIP_DOWNLOAD_URL" && \
+    tar xzf pjsip.tar.gz && \
+    rm -rf pjsip.tar.gz && \
     mv pjproject-*/* ./
 
 # Download Swig
