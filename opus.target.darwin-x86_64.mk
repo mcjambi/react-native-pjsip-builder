@@ -1,1 +1,393 @@
-IyBUaGlzIGZpbGUgaXMgZ2VuZXJhdGVkIGJ5IGd5cDsgZG8gbm90IGVkaXQuCgppbmNsdWRlICQoQ0xFQVJfVkFSUykKCkxPQ0FMX01PRFVMRV9DTEFTUyA6PSBTVEFUSUNfTElCUkFSSUVTCkxPQ0FMX01PRFVMRSA6PSB0aGlyZF9wYXJ0eV9vcHVzX29wdXNfZ3lwCkxPQ0FMX01PRFVMRV9TVUZGSVggOj0gLmEKTE9DQUxfTU9EVUxFX1RBR1MgOj0gb3B0aW9uYWwKTE9DQUxfTU9EVUxFX1RBUkdFVF9BUkNIIDo9ICQoVEFSR0VUXyQoR1lQX1ZBUl9QUkVGSVgpQVJDSCkKZ3lwX2ludGVybWVkaWF0ZV9kaXIgOj0gJChjYWxsIGxvY2FsLWludGVybWVkaWF0ZXMtZGlyLCwkKEdZUF9WQVJfUFJFRklYKSkKZ3lwX3NoYXJlZF9pbnRlcm1lZGlhdGVfZGlyIDo9ICQoY2FsbCBpbnRlcm1lZGlhdGVzLWRpci1mb3IsR1lQLHNoYXJlZCwsLCQoR1lQX1ZBUl9QUkVGSVgpKQoKIyBNYWtlIHN1cmUgb3VyIGRlcHMgYXJlIGJ1aWx0IGZpcnN0LgpHWVBfVEFSR0VUX0RFUEVOREVOQ0lFUyA6PQoKR1lQX0dFTkVSQVRFRF9PVVRQVVRTIDo9CgojIE1ha2Ugc3VyZSBvdXIgZGVwcyBhbmQgZ2VuZXJhdGVkIGZpbGVzIGFyZSBidWlsdCBmaXJzdC4KTE9DQUxfQURESVRJT05BTF9ERVBFTkRFTkNJRVMgOj0gJChHWVBfVEFSR0VUX0RFUEVOREVOQ0lFUykgJChHWVBfR0VORVJBVEVEX09VVFBVVFMpCgpMT0NBTF9HRU5FUkFURURfU09VUkNFUyA6PQoKR1lQX0NPUElFRF9TT1VSQ0VfT1JJR0lOX0RJUlMgOj0KCkxPQ0FMX1NSQ19GSUxFUyA6PSBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9jZWx0L2JhbmRzLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvY2VsdC9jZWx0LmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvY2VsdC9jZWx0X2RlY29kZXIuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9jZWx0L2NlbHRfZW5jb2Rlci5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL2NlbHQvY2VsdF9scGMuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9jZWx0L2N3cnMuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9jZWx0L2VudGNvZGUuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9jZWx0L2VudGRlYy5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL2NlbHQvZW50ZW5jLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvY2VsdC9raXNzX2ZmdC5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL2NlbHQvbGFwbGFjZS5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL2NlbHQvbWF0aG9wcy5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL2NlbHQvbWRjdC5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL2NlbHQvbW9kZXMuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9jZWx0L3BpdGNoLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvY2VsdC9xdWFudF9iYW5kcy5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL2NlbHQvcmF0ZS5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL2NlbHQvdnEuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL0EyTkxTRi5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvYW5hX2ZpbHRfYmFua18xLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9iaXF1YWRfYWx0LmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9id2V4cGFuZGVyLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9id2V4cGFuZGVyXzMyLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9jaGVja19jb250cm9sX2lucHV0LmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9DTkcuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2NvZGVfc2lnbnMuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2NvbnRyb2xfYXVkaW9fYmFuZHdpZHRoLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9jb250cm9sX2NvZGVjLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9jb250cm9sX1NOUi5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZGVidWcuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2RlY19BUEkuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2RlY29kZV9jb3JlLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9kZWNvZGVfZnJhbWUuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2RlY29kZV9pbmRpY2VzLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9kZWNvZGVfcGFyYW1ldGVycy5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZGVjb2RlX3BpdGNoLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9kZWNvZGVfcHVsc2VzLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9kZWNvZGVyX3NldF9mcy5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZW5jX0FQSS5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZW5jb2RlX2luZGljZXMuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2VuY29kZV9wdWxzZXMuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0L2FwcGx5X3NpbmVfd2luZG93X0ZMUC5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZmxvYXQvYXV0b2NvcnJlbGF0aW9uX0ZMUC5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZmxvYXQvYnVyZ19tb2RpZmllZF9GTFAuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0L2J3ZXhwYW5kZXJfRkxQLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9mbG9hdC9jb3JyTWF0cml4X0ZMUC5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZmxvYXQvZW5jb2RlX2ZyYW1lX0ZMUC5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZmxvYXQvZW5lcmd5X0ZMUC5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZmxvYXQvZmluZF9MUENfRkxQLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9mbG9hdC9maW5kX0xUUF9GTFAuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0L2ZpbmRfcGl0Y2hfbGFnc19GTFAuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0L2ZpbmRfcHJlZF9jb2Vmc19GTFAuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0L2lubmVyX3Byb2R1Y3RfRkxQLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9mbG9hdC9rMmFfRkxQLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9mbG9hdC9sZXZpbnNvbmR1cmJpbl9GTFAuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0L0xQQ19hbmFseXNpc19maWx0ZXJfRkxQLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9mbG9hdC9MUENfaW52X3ByZWRfZ2Fpbl9GTFAuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0L0xUUF9hbmFseXNpc19maWx0ZXJfRkxQLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9mbG9hdC9MVFBfc2NhbGVfY3RybF9GTFAuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0L25vaXNlX3NoYXBlX2FuYWx5c2lzX0ZMUC5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZmxvYXQvcGl0Y2hfYW5hbHlzaXNfY29yZV9GTFAuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0L3ByZWZpbHRlcl9GTFAuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0L3Byb2Nlc3NfZ2FpbnNfRkxQLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9mbG9hdC9yZWd1bGFyaXplX2NvcnJlbGF0aW9uc19GTFAuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0L3Jlc2lkdWFsX2VuZXJneV9GTFAuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0L3NjYWxlX2NvcHlfdmVjdG9yX0ZMUC5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZmxvYXQvc2NhbGVfdmVjdG9yX0ZMUC5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZmxvYXQvc2NodXJfRkxQLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9mbG9hdC9zb2x2ZV9MU19GTFAuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0L3NvcnRfRkxQLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9mbG9hdC93YXJwZWRfYXV0b2NvcnJlbGF0aW9uX0ZMUC5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZmxvYXQvd3JhcHBlcnNfRkxQLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9nYWluX3F1YW50LmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9IUF92YXJpYWJsZV9jdXRvZmYuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2luaXRfZGVjb2Rlci5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvaW5pdF9lbmNvZGVyLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9pbm5lcl9wcm9kX2FsaWduZWQuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2ludGVycG9sYXRlLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9saW4ybG9nLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9sb2cybGluLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9MUF92YXJpYWJsZV9jdXRvZmYuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL0xQQ19hbmFseXNpc19maWx0ZXIuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL0xQQ19pbnZfcHJlZF9nYWluLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9OTFNGMkEuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL05MU0ZfZGVjb2RlLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9OTFNGX2RlbF9kZWNfcXVhbnQuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL05MU0ZfZW5jb2RlLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9OTFNGX3N0YWJpbGl6ZS5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvTkxTRl91bnBhY2suYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL05MU0ZfVlEuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL05MU0ZfVlFfd2VpZ2h0c19sYXJvaWEuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL05TUS5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvTlNRX2RlbF9kZWMuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL3BpdGNoX2VzdF90YWJsZXMuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL1BMQy5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvcHJvY2Vzc19OTFNGcy5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvcXVhbnRfTFRQX2dhaW5zLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9yZXNhbXBsZXIuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL3Jlc2FtcGxlcl9kb3duMi5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvcmVzYW1wbGVyX2Rvd24yXzMuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL3Jlc2FtcGxlcl9wcml2YXRlX0FSMi5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvcmVzYW1wbGVyX3ByaXZhdGVfZG93bl9GSVIuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL3Jlc2FtcGxlcl9wcml2YXRlX0lJUl9GSVIuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL3Jlc2FtcGxlcl9wcml2YXRlX3VwMl9IUS5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvcmVzYW1wbGVyX3JvbS5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvc2hlbGxfY29kZXIuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL3NpZ21fUTE1LmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9zb3J0LmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9zdGVyZW9fZGVjb2RlX3ByZWQuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL3N0ZXJlb19lbmNvZGVfcHJlZC5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvc3RlcmVvX2ZpbmRfcHJlZGljdG9yLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay9zdGVyZW9fTFJfdG9fTVMuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL3N0ZXJlb19NU190b19MUi5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvc3RlcmVvX3F1YW50X3ByZWQuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL3N1bV9zcXJfc2hpZnQuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL3RhYmxlX0xTRl9jb3MuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL3RhYmxlc19nYWluLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay90YWJsZXNfTFRQLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsay90YWJsZXNfTkxTRl9DQl9OQl9NQi5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvdGFibGVzX05MU0ZfQ0JfV0IuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL3RhYmxlc19vdGhlci5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvdGFibGVzX3BpdGNoX2xhZy5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvdGFibGVzX3B1bHNlc19wZXJfYmxvY2suYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL1ZBRC5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvVlFfV01hdF9FQy5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NyYy9hbmFseXNpcy5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NyYy9tbHAuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zcmMvbWxwX2RhdGEuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zcmMvb3B1cy5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NyYy9vcHVzX2RlY29kZXIuYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zcmMvb3B1c19lbmNvZGVyLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc3JjL29wdXNfbXVsdGlzdHJlYW0uYyBcCgl0aGlyZF9wYXJ0eS9vcHVzL3NyYy9zcmMvb3B1c19tdWx0aXN0cmVhbV9kZWNvZGVyLmMgXAoJdGhpcmRfcGFydHkvb3B1cy9zcmMvc3JjL29wdXNfbXVsdGlzdHJlYW1fZW5jb2Rlci5jIFwKCXRoaXJkX3BhcnR5L29wdXMvc3JjL3NyYy9yZXBhY2tldGl6ZXIuYwoKCiMgRmxhZ3MgcGFzc2VkIHRvIGJvdGggQyBhbmQgQysrIGZpbGVzLgpNWV9DRkxBR1NfRGVidWcgOj0gXAoJLWZzdGFjay1wcm90ZWN0b3IgXAoJLS1wYXJhbT1zc3AtYnVmZmVyLXNpemU9NCBcCgktZm5vLWV4Y2VwdGlvbnMgXAoJLWZuby1zdHJpY3QtYWxpYXNpbmcgXAoJLVduby11bnVzZWQtcGFyYW1ldGVyIFwKCS1Xbm8tbWlzc2luZy1maWVsZC1pbml0aWFsaXplcnMgXAoJLWZ2aXNpYmlsaXR5PWhpZGRlbiBcCgktcGlwZSBcCgktZlBJQyBcCgktV25vLXVudXNlZC1sb2NhbC10eXBlZGVmcyBcCgktV25vLWZvcm1hdCBcCgktbTY0IFwKCS1tYXJjaD14ODYtNjQgXAoJLWZmdW5jdGlvbi1zZWN0aW9ucyBcCgktZnVud2luZC10YWJsZXMgXAoJLWcgXAoJLWZzdGFjay1wcm90ZWN0b3IgXAoJLWZuby1zaG9ydC1lbnVtcyBcCgktZmlubGluZS1saW1pdD02NCBcCgktV2EsLS1ub2V4ZWNzdGFjayBcCgktVV9GT1JUSUZZX1NPVVJDRSBcCgktV25vLWV4dHJhIFwKCS1Xbm8taWdub3JlZC1xdWFsaWZpZXJzIFwKCS1Xbm8tdHlwZS1saW1pdHMgXAoJLVduby11bnVzZWQtYnV0LXNldC12YXJpYWJsZSBcCgktV25vLWFkZHJlc3MgXAoJLVduby1mb3JtYXQtc2VjdXJpdHkgXAoJLVduby1yZXR1cm4tdHlwZSBcCgktV25vLXNlcXVlbmNlLXBvaW50IFwKCS1PcyBcCgktZyBcCgktZmRhdGEtc2VjdGlvbnMgXAoJLWZmdW5jdGlvbi1zZWN0aW9ucyBcCgktZm9taXQtZnJhbWUtcG9pbnRlciBcCgktZnVud2luZC10YWJsZXMKCk1ZX0RFRlNfRGVidWcgOj0gXAoJJy1EVjhfREVQUkVDQVRJT05fV0FSTklOR1MnIFwKCSctREJMSU5LX1NDQUxFX0ZJTFRFUlNfQVRfUkVDT1JEX1RJTUUnIFwKCSctRF9GSUxFX09GRlNFVF9CSVRTPTY0JyBcCgknLUROT19UQ01BTExPQycgXAoJJy1ERElTQUJMRV9OQUNMJyBcCgknLURDSFJPTUlVTV9CVUlMRCcgXAoJJy1EVVNFX0xJQkpQRUdfVFVSQk89MScgXAoJJy1ERU5BQkxFX1dFQlJUQz0xJyBcCgknLURVU0VfUFJPUFJJRVRBUllfQ09ERUNTJyBcCgknLURFTkFCTEVfQlJPV1NFUl9DRE1TJyBcCgknLURFTkFCTEVfQ09ORklHVVJBVElPTl9QT0xJQ1knIFwKCSctRERJU0NBUkRBQkxFX01FTU9SWV9BTFdBWVNfU1VQUE9SVEVEX05BVElWRUxZJyBcCgknLURTWVNURU1fTkFUSVZFTFlfU0lHTkFMU19NRU1PUllfUFJFU1NVUkUnIFwKCSctREVOQUJMRV9FR0xJTUFHRT0xJyBcCgknLURDTERfVkVSU0lPTj0xJyBcCgknLURFTkFCTEVfUFJJTlRJTkc9MScgXAoJJy1ERU5BQkxFX01BTkFHRURfVVNFUlM9MScgXAoJJy1EREFUQV9SRURVQ1RJT05fRkFMTEJBQ0tfSE9TVD0iaHR0cDovL2NvbXByZXNzLmdvb2dsZXppcC5uZXQ6ODAvIicgXAoJJy1EREFUQV9SRURVQ1RJT05fREVWX0hPU1Q9Imh0dHA6Ly9wcm94eS1kZXYuZ29vZ2xlemlwLm5ldDo4MC8iJyBcCgknLURTUERZX1BST1hZX0FVVEhfT1JJR0lOPSJodHRwczovL3Byb3h5Lmdvb2dsZXppcC5uZXQ6NDQzLyInIFwKCSctRERBVEFfUkVEVUNUSU9OX1BST1hZX1BST0JFX1VSTD0iaHR0cDovL2NoZWNrLmdvb2dsZXppcC5uZXQvY29ubmVjdCInIFwKCSctRERBVEFfUkVEVUNUSU9OX1BST1hZX1dBUk1VUF9VUkw9Imh0dHA6Ly93d3cuZ3N0YXRpYy5jb20vZ2VuZXJhdGVfMjA0IicgXAoJJy1EVklERU9fSE9MRT0xJyBcCgknLURPUFVTX0JVSUxEJyBcCgknLURPUFVTX0VYUE9SVD0nIFwKCSctREhBVkVfTFJJTlQnIFwKCSctREhBVkVfTFJJTlRGJyBcCgknLURWQVJfQVJSQVlTJyBcCgknLURVU0VfT1BFTlNTTD0xJyBcCgknLURVU0VfT1BFTlNTTF9DRVJUUz0xJyBcCgknLURBTkRST0lEJyBcCgknLURfX0dOVV9TT1VSQ0U9MScgXAoJJy1EVVNFX1NUTFBPUlQ9MScgXAoJJy1EX1NUTFBfVVNFX1BUUl9TUEVDSUFMSVpBVElPTlM9MScgXAoJJy1EQ0hST01FX0JVSUxEX0lEPSIiJyBcCgknLUREWU5BTUlDX0FOTk9UQVRJT05TX0VOQUJMRUQ9MScgXAoJJy1EV1RGX1VTRV9EWU5BTUlDX0FOTk9UQVRJT05TPTEnIFwKCSctRF9ERUJVRycKCgojIEluY2x1ZGUgcGF0aHMgcGxhY2VkIGJlZm9yZSBDRkxBR1MvQ1BQRkxBR1MKTE9DQUxfQ19JTkNMVURFU19EZWJ1ZyA6PSBcCgkkKGd5cF9zaGFyZWRfaW50ZXJtZWRpYXRlX2RpcikgXAoJJChMT0NBTF9QQVRIKS90aGlyZF9wYXJ0eS9vcHVzL3NyYy9jZWx0IFwKCSQoTE9DQUxfUEFUSCkvdGhpcmRfcGFydHkvb3B1cy9zcmMvaW5jbHVkZSBcCgkkKExPQ0FMX1BBVEgpL3RoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsgXAoJJChMT0NBTF9QQVRIKS90aGlyZF9wYXJ0eS9vcHVzL3NyYy9zaWxrL2Zsb2F0IFwKCSQoUFdEKS9mcmFtZXdvcmtzL3dpbGhlbG0vaW5jbHVkZSBcCgkkKFBXRCkvYmlvbmljIFwKCSQoUFdEKS9leHRlcm5hbC9zdGxwb3J0L3N0bHBvcnQKCgojIEZsYWdzIHBhc3NlZCB0byBvbmx5IEMrKyAoYW5kIG5vdCBDKSBmaWxlcy4KTE9DQUxfQ1BQRkxBR1NfRGVidWcgOj0gXAoJLWZuby1ydHRpIFwKCS1mbm8tdGhyZWFkc2FmZS1zdGF0aWNzIFwKCS1mdmlzaWJpbGl0eS1pbmxpbmVzLWhpZGRlbiBcCgktV25vLWRlcHJlY2F0ZWQgXAoJLVduby1ub24tdmlydHVhbC1kdG9yIFwKCS1Xbm8tc2lnbi1wcm9tbyBcCgktV25vLW5vbi12aXJ0dWFsLWR0b3IKCgpMT0NBTF9GRE9fU1VQUE9SVF9EZWJ1ZyA6PSBmYWxzZQoKIyBGbGFncyBwYXNzZWQgdG8gYm90aCBDIGFuZCBDKysgZmlsZXMuCk1ZX0NGTEFHU19SZWxlYXNlIDo9IFwKCS1mc3RhY2stcHJvdGVjdG9yIFwKCS0tcGFyYW09c3NwLWJ1ZmZlci1zaXplPTQgXAoJLWZuby1leGNlcHRpb25zIFwKCS1mbm8tc3RyaWN0LWFsaWFzaW5nIFwKCS1Xbm8tdW51c2VkLXBhcmFtZXRlciBcCgktV25vLW1pc3NpbmctZmllbGQtaW5pdGlhbGl6ZXJzIFwKCS1mdmlzaWJpbGl0eT1oaWRkZW4gXAoJLXBpcGUgXAoJLWZQSUMgXAoJLVduby11bnVzZWQtbG9jYWwtdHlwZWRlZnMgXAoJLVduby1mb3JtYXQgXAoJLW02NCBcCgktbWFyY2g9eDg2LTY0IFwKCS1mZnVuY3Rpb24tc2VjdGlvbnMgXAoJLWZ1bndpbmQtdGFibGVzIFwKCS1nIFwKCS1mc3RhY2stcHJvdGVjdG9yIFwKCS1mbm8tc2hvcnQtZW51bXMgXAoJLWZpbmxpbmUtbGltaXQ9NjQgXAoJLVdhLC0tbm9leGVjc3RhY2sgXAoJLVVfRk9SVElGWV9TT1VSQ0UgXAoJLVduby1leHRyYSBcCgktV25vLWlnbm9yZWQtcXVhbGlmaWVycyBcCgktV25vLXR5cGUtbGltaXRzIFwKCS1Xbm8tdW51c2VkLWJ1dC1zZXQtdmFyaWFibGUgXAoJLVduby1hZGRyZXNzIFwKCS1Xbm8tZm9ybWF0LXNlY3VyaXR5IFwKCS1Xbm8tcmV0dXJuLXR5cGUgXAoJLVduby1zZXF1ZW5jZS1wb2ludCBcCgktT3MgXAoJLWZuby1pZGVudCBcCgktZmRhdGEtc2VjdGlvbnMgXAoJLWZmdW5jdGlvbi1zZWN0aW9ucyBcCgktZm9taXQtZnJhbWUtcG9pbnRlciBcCgktZnVud2luZC10YWJsZXMKCk1ZX0RFRlNfUmVsZWFzZSA6PSBcCgknLURWOF9ERVBSRUNBVElPTl9XQVJOSU5HUycgXAoJJy1EQkxJTktfU0NBTEVfRklMVEVSU19BVF9SRUNPUkRfVElNRScgXAoJJy1EX0ZJTEVfT0ZGU0VUX0JJVFM9NjQnIFwKCSctRE5PX1RDTUFMTE9DJyBcCgknLURESVNBQkxFX05BQ0wnIFwKCSctRENIUk9NSVVNX0JVSUxEJyBcCgknLURVU0VfTElCSlBFR19UVVJCTz0xJyBcCgknLURFTkFCTEVfV0VCUlRDPTEnIFwKCSctRFVTRV9QUk9QUklFVEFSWV9DT0RFQ1MnIFwKCSctREVOQUJMRV9CUk9XU0VSX0NETVMnIFwKCSctREVOQUJMRV9DT05GSUdVUkFUSU9OX1BPTElDWScgXAoJJy1ERElTQ0FSREFCTEVfTUVNT1JZX0FMV0FZU19TVVBQT1JURURfTkFUSVZFTFknIFwKCSctRFNZU1RFTV9OQVRJVkVMWV9TSUdOQUxTX01FTU9SWV9QUkVTU1VSRScgXAoJJy1ERU5BQkxFX0VHTElNQUdFPTEnIFwKCSctRENMRF9WRVJTSU9OPTEnIFwKCSctREVOQUJMRV9QUklOVElORz0xJyBcCgknLURFTkFCTEVfTUFOQUdFRF9VU0VSUz0xJyBcCgknLUREQVRBX1JFRFVDVElPTl9GQUxMQkFDS19IT1NUPSJodHRwOi8vY29tcHJlc3MuZ29vZ2xlemlwLm5ldDo4MC8iJyBcCgknLUREQVRBX1JFRFVDVElPTl9ERVZfSE9TVD0iaHR0cDovL3Byb3h5LWRldi5nb29nbGV6aXAubmV0OjgwLyInIFwKCSctRFNQRFlfUFJPWFlfQVVUSF9PUklHSU49Imh0dHBzOi8vcHJveHkuZ29vZ2xlemlwLm5ldDo0NDMvIicgXAoJJy1EREFUQV9SRURVQ1RJT05fUFJPWFlfUFJPQkVfVVJMPSJodHRwOi8vY2hlY2suZ29vZ2xlemlwLm5ldC9jb25uZWN0IicgXAoJJy1EREFUQV9SRURVQ1RJT05fUFJPWFlfV0FSTVVQX1VSTD0iaHR0cDovL3d3dy5nc3RhdGljLmNvbS9nZW5lcmF0ZV8yMDQiJyBcCgknLURWSURFT19IT0xFPTEnIFwKCSctRE9QVVNfQlVJTEQnIFwKCSctRE9QVVNfRVhQT1JUPScgXAoJJy1ESEFWRV9MUklOVCcgXAoJJy1ESEFWRV9MUklOVEYnIFwKCSctRFZBUl9BUlJBWVMnIFwKCSctRFVTRV9PUEVOU1NMPTEnIFwKCSctRFVTRV9PUEVOU1NMX0NFUlRTPTEnIFwKCSctREFORFJPSUQnIFwKCSctRF9fR05VX1NPVVJDRT0xJyBcCgknLURVU0VfU1RMUE9SVD0xJyBcCgknLURfU1RMUF9VU0VfUFRSX1NQRUNJQUxJWkFUSU9OUz0xJyBcCgknLURDSFJPTUVfQlVJTERfSUQ9IiInIFwKCSctRE5ERUJVRycgXAoJJy1ETlZBTEdSSU5EJyBcCgknLUREWU5BTUlDX0FOTk9UQVRJT05TX0VOQUJMRUQ9MCcKCgojIEluY2x1ZGUgcGF0aHMgcGxhY2VkIGJlZm9yZSBDRkxBR1MvQ1BQRkxBR1MKTE9DQUxfQ19JTkNMVURFU19SZWxlYXNlIDo9IFwKCSQoZ3lwX3NoYXJlZF9pbnRlcm1lZGlhdGVfZGlyKSBcCgkkKExPQ0FMX1BBVEgpL3RoaXJkX3BhcnR5L29wdXMvc3JjL2NlbHQgXAoJJChMT0NBTF9QQVRIKS90aGlyZF9wYXJ0eS9vcHVzL3NyYy9pbmNsdWRlIFwKCSQoTE9DQUxfUEFUSCkvdGhpcmRfcGFydHkvb3B1cy9zcmMvc2lsayBcCgkkKExPQ0FMX1BBVEgpL3RoaXJkX3BhcnR5L29wdXMvc3JjL3NpbGsvZmxvYXQgXAoJJChQV0QpL2ZyYW1ld29ya3Mvd2lsaGVsbS9pbmNsdWRlIFwKCSQoUFdEKS9iaW9uaWMgXAoJJChQV0QpL2V4dGVybmFsL3N0bHBvcnQvc3RscG9ydAoKCiMgRmxhZ3MgcGFzc2VkIHRvIG9ubHkgQysrIChhbmQgbm90IEMpIGZpbGVzLgpMT0NBTF9DUFBGTEFHU19SZWxlYXNlIDo9IFwKCS1mbm8tcnR0aSBcCgktZm5vLXRocmVhZHNhZmUtc3RhdGljcyBcCgktZnZpc2liaWxpdHktaW5saW5lcy1oaWRkZW4gXAoJLVduby1kZXByZWNhdGVkIFwKCS1Xbm8tbm9uLXZpcnR1YWwtZHRvciBcCgktV25vLXNpZ24tcHJvbW8gXAoJLVduby1ub24tdmlydHVhbC1kdG9yCgoKTE9DQUxfRkRPX1NVUFBPUlRfUmVsZWFzZSA6PSBmYWxzZQoKTE9DQUxfQ0ZMQUdTIDo9ICQoTVlfQ0ZMQUdTXyQoR1lQX0NPTkZJR1VSQVRJT04pKSAkKE1ZX0RFRlNfJChHWVBfQ09ORklHVVJBVElPTikpCkxPQ0FMX0ZET19TVVBQT1JUIDo9ICQoTE9DQUxfRkRPX1NVUFBPUlRfJChHWVBfQ09ORklHVVJBVElPTikpCkxPQ0FMX0NfSU5DTFVERVMgOj0gJChHWVBfQ09QSUVEX1NPVVJDRV9PUklHSU5fRElSUykgJChMT0NBTF9DX0lOQ0xVREVTXyQoR1lQX0NPTkZJR1VSQVRJT04pKQpMT0NBTF9DUFBGTEFHUyA6PSAkKExPQ0FMX0NQUEZMQUdTXyQoR1lQX0NPTkZJR1VSQVRJT04pKQpMT0NBTF9BU0ZMQUdTIDo9ICQoTE9DQUxfQ0ZMQUdTKQojIyMgUnVsZXMgZm9yIGZpbmFsIHRhcmdldC4KCkxPQ0FMX0xERkxBR1NfRGVidWcgOj0gXAoJLVdsLC16LG5vdyBcCgktV2wsLXoscmVscm8gXAoJLVdsLC0tZmF0YWwtd2FybmluZ3MgXAoJLVdsLC16LG5vZXhlY3N0YWNrIFwKCS1mUElDIFwKCS1tNjQgXAoJLWZ1c2UtbGQ9Z29sZCBcCgktbm9zdGRsaWIgXAoJLVdsLC0tbm8tdW5kZWZpbmVkIFwKCS1XbCwtLWV4Y2x1ZGUtbGlicz1BTEwgXAoJLVdsLC0td2Fybi1zaGFyZWQtdGV4dHJlbCBcCgktV2wsLU8xIFwKCS1XbCwtLWFzLW5lZWRlZAoKCkxPQ0FMX0xERkxBR1NfUmVsZWFzZSA6PSBcCgktV2wsLXosbm93IFwKCS1XbCwteixyZWxybyBcCgktV2wsLS1mYXRhbC13YXJuaW5ncyBcCgktV2wsLXosbm9leGVjc3RhY2sgXAoJLWZQSUMgXAoJLW02NCBcCgktZnVzZS1sZD1nb2xkIFwKCS1ub3N0ZGxpYiBcCgktV2wsLS1uby11bmRlZmluZWQgXAoJLVdsLC0tZXhjbHVkZS1saWJzPUFMTCBcCgktV2wsLU8xIFwKCS1XbCwtLWFzLW5lZWRlZCBcCgktV2wsLS1nYy1zZWN0aW9ucyBcCgktV2wsLS13YXJuLXNoYXJlZC10ZXh0cmVsCgoKTE9DQUxfTERGTEFHUyA6PSAkKExPQ0FMX0xERkxBR1NfJChHWVBfQ09ORklHVVJBVElPTikpCgpMT0NBTF9TVEFUSUNfTElCUkFSSUVTIDo9CgojIEVuYWJsZSBncm91cGluZyB0byBmaXggY2lyY3VsYXIgcmVmZXJlbmNlcwpMT0NBTF9HUk9VUF9TVEFUSUNfTElCUkFSSUVTIDo9IHRydWUKCkxPQ0FMX1NIQVJFRF9MSUJSQVJJRVMgOj0gXAoJbGlic3RscG9ydCBcCglsaWJkbAoKIyBBZGQgdGFyZ2V0IGFsaWFzIHRvICJneXBfYWxsX21vZHVsZXMiIHRhcmdldC4KLlBIT05ZOiBneXBfYWxsX21vZHVsZXMKZ3lwX2FsbF9tb2R1bGVzOiB0aGlyZF9wYXJ0eV9vcHVzX29wdXNfZ3lwCgojIEFsaWFzIGd5cCB0YXJnZXQgbmFtZS4KLlBIT05ZOiBvcHVzCm9wdXM6IHRoaXJkX3BhcnR5X29wdXNfb3B1c19neXAKCmluY2x1ZGUgJChCVUlMRF9TVEFUSUNfTElCUkFSWSkK
+# This file is generated by gyp; do not edit.
+include $(CLEAR_VARS)
+LOCAL_MODULE_CLASS := STATIC_LIBRARIES
+LOCAL_MODULE := third_party_opus_opus_gyp
+LOCAL_MODULE_SUFFIX := .a
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_TARGET_ARCH := $(TARGET_$(GYP_VAR_PREFIX)ARCH)
+gyp_intermediate_dir := $(call local-intermediates-dir,,$(GYP_VAR_PREFIX))
+gyp_shared_intermediate_dir := $(call intermediates-dir-for,GYP,shared,,,$(GYP_VAR_PREFIX))
+# Make sure our deps are built first.
+GYP_TARGET_DEPENDENCIES :=
+GYP_GENERATED_OUTPUTS :=
+# Make sure our deps and generated files are built first.
+LOCAL_ADDITIONAL_DEPENDENCIES := $(GYP_TARGET_DEPENDENCIES) $(GYP_GENERATED_OUTPUTS)
+LOCAL_GENERATED_SOURCES :=
+GYP_COPIED_SOURCE_ORIGIN_DIRS :=
+LOCAL_SRC_FILES := \
+	third_party/opus/src/celt/bands.c \
+	third_party/opus/src/celt/celt.c \
+	third_party/opus/src/celt/celt_decoder.c \
+	third_party/opus/src/celt/celt_encoder.c \
+	third_party/opus/src/celt/celt_lpc.c \
+	third_party/opus/src/celt/cwrs.c \
+	third_party/opus/src/celt/entcode.c \
+	third_party/opus/src/celt/entdec.c \
+	third_party/opus/src/celt/entenc.c \
+	third_party/opus/src/celt/kiss_fft.c \
+	third_party/opus/src/celt/laplace.c \
+	third_party/opus/src/celt/mathops.c \
+	third_party/opus/src/celt/mdct.c \
+	third_party/opus/src/celt/modes.c \
+	third_party/opus/src/celt/pitch.c \
+	third_party/opus/src/celt/quant_bands.c \
+	third_party/opus/src/celt/rate.c \
+	third_party/opus/src/celt/vq.c \
+	third_party/opus/src/silk/A2NLSF.c \
+	third_party/opus/src/silk/ana_filt_bank_1.c \
+	third_party/opus/src/silk/biquad_alt.c \
+	third_party/opus/src/silk/bwexpander.c \
+	third_party/opus/src/silk/bwexpander_32.c \
+	third_party/opus/src/silk/check_control_input.c \
+	third_party/opus/src/silk/CNG.c \
+	third_party/opus/src/silk/code_signs.c \
+	third_party/opus/src/silk/control_audio_bandwidth.c \
+	third_party/opus/src/silk/control_codec.c \
+	third_party/opus/src/silk/control_SNR.c \
+	third_party/opus/src/silk/debug.c \
+	third_party/opus/src/silk/dec_API.c \
+	third_party/opus/src/silk/decode_core.c \
+	third_party/opus/src/silk/decode_frame.c \
+	third_party/opus/src/silk/decode_indices.c \
+	third_party/opus/src/silk/decode_parameters.c \
+	third_party/opus/src/silk/decode_pitch.c \
+	third_party/opus/src/silk/decode_pulses.c \
+	third_party/opus/src/silk/decoder_set_fs.c \
+	third_party/opus/src/silk/enc_API.c \
+	third_party/opus/src/silk/encode_indices.c \
+	third_party/opus/src/silk/encode_pulses.c \
+	third_party/opus/src/silk/float/apply_sine_window_FLP.c \
+	third_party/opus/src/silk/float/autocorrelation_FLP.c \
+	third_party/opus/src/silk/float/burg_modified_FLP.c \
+	third_party/opus/src/silk/float/bwexpander_FLP.c \
+	third_party/opus/src/silk/float/corrMatrix_FLP.c \
+	third_party/opus/src/silk/float/encode_frame_FLP.c \
+	third_party/opus/src/silk/float/energy_FLP.c \
+	third_party/opus/src/silk/float/find_LPC_FLP.c \
+	third_party/opus/src/silk/float/find_LTP_FLP.c \
+	third_party/opus/src/silk/float/find_pitch_lags_FLP.c \
+	third_party/opus/src/silk/float/find_pred_coefs_FLP.c \
+	third_party/opus/src/silk/float/inner_product_FLP.c \
+	third_party/opus/src/silk/float/k2a_FLP.c \
+	third_party/opus/src/silk/float/levinsondurbin_FLP.c \
+	third_party/opus/src/silk/float/LPC_analysis_filter_FLP.c \
+	third_party/opus/src/silk/float/LPC_inv_pred_gain_FLP.c \
+	third_party/opus/src/silk/float/LTP_analysis_filter_FLP.c \
+	third_party/opus/src/silk/float/LTP_scale_ctrl_FLP.c \
+	third_party/opus/src/silk/float/noise_shape_analysis_FLP.c \
+	third_party/opus/src/silk/float/pitch_analysis_core_FLP.c \
+	third_party/opus/src/silk/float/prefilter_FLP.c \
+	third_party/opus/src/silk/float/process_gains_FLP.c \
+	third_party/opus/src/silk/float/regularize_correlations_FLP.c \
+	third_party/opus/src/silk/float/residual_energy_FLP.c \
+	third_party/opus/src/silk/float/scale_copy_vector_FLP.c \
+	third_party/opus/src/silk/float/scale_vector_FLP.c \
+	third_party/opus/src/silk/float/schur_FLP.c \
+	third_party/opus/src/silk/float/solve_LS_FLP.c \
+	third_party/opus/src/silk/float/sort_FLP.c \
+	third_party/opus/src/silk/float/warped_autocorrelation_FLP.c \
+	third_party/opus/src/silk/float/wrappers_FLP.c \
+	third_party/opus/src/silk/gain_quant.c \
+	third_party/opus/src/silk/HP_variable_cutoff.c \
+	third_party/opus/src/silk/init_decoder.c \
+	third_party/opus/src/silk/init_encoder.c \
+	third_party/opus/src/silk/inner_prod_aligned.c \
+	third_party/opus/src/silk/interpolate.c \
+	third_party/opus/src/silk/lin2log.c \
+	third_party/opus/src/silk/log2lin.c \
+	third_party/opus/src/silk/LP_variable_cutoff.c \
+	third_party/opus/src/silk/LPC_analysis_filter.c \
+	third_party/opus/src/silk/LPC_inv_pred_gain.c \
+	third_party/opus/src/silk/NLSF2A.c \
+	third_party/opus/src/silk/NLSF_decode.c \
+	third_party/opus/src/silk/NLSF_del_dec_quant.c \
+	third_party/opus/src/silk/NLSF_encode.c \
+	third_party/opus/src/silk/NLSF_stabilize.c \
+	third_party/opus/src/silk/NLSF_unpack.c \
+	third_party/opus/src/silk/NLSF_VQ.c \
+	third_party/opus/src/silk/NLSF_VQ_weights_laroia.c \
+	third_party/opus/src/silk/NSQ.c \
+	third_party/opus/src/silk/NSQ_del_dec.c \
+	third_party/opus/src/silk/pitch_est_tables.c \
+	third_party/opus/src/silk/PLC.c \
+	third_party/opus/src/silk/process_NLSFs.c \
+	third_party/opus/src/silk/quant_LTP_gains.c \
+	third_party/opus/src/silk/resampler.c \
+	third_party/opus/src/silk/resampler_down2.c \
+	third_party/opus/src/silk/resampler_down2_3.c \
+	third_party/opus/src/silk/resampler_private_AR2.c \
+	third_party/opus/src/silk/resampler_private_down_FIR.c \
+	third_party/opus/src/silk/resampler_private_IIR_FIR.c \
+	third_party/opus/src/silk/resampler_private_up2_HQ.c \
+	third_party/opus/src/silk/resampler_rom.c \
+	third_party/opus/src/silk/shell_coder.c \
+	third_party/opus/src/silk/sigm_Q15.c \
+	third_party/opus/src/silk/sort.c \
+	third_party/opus/src/silk/stereo_decode_pred.c \
+	third_party/opus/src/silk/stereo_encode_pred.c \
+	third_party/opus/src/silk/stereo_find_predictor.c \
+	third_party/opus/src/silk/stereo_LR_to_MS.c \
+	third_party/opus/src/silk/stereo_MS_to_LR.c \
+	third_party/opus/src/silk/stereo_quant_pred.c \
+	third_party/opus/src/silk/sum_sqr_shift.c \
+	third_party/opus/src/silk/table_LSF_cos.c \
+	third_party/opus/src/silk/tables_gain.c \
+	third_party/opus/src/silk/tables_LTP.c \
+	third_party/opus/src/silk/tables_NLSF_CB_NB_MB.c \
+	third_party/opus/src/silk/tables_NLSF_CB_WB.c \
+	third_party/opus/src/silk/tables_other.c \
+	third_party/opus/src/silk/tables_pitch_lag.c \
+	third_party/opus/src/silk/tables_pulses_per_block.c \
+	third_party/opus/src/silk/VAD.c \
+	third_party/opus/src/silk/VQ_WMat_EC.c \
+	third_party/opus/src/src/analysis.c \
+	third_party/opus/src/src/mlp.c \
+	third_party/opus/src/src/mlp_data.c \
+	third_party/opus/src/src/opus.c \
+	third_party/opus/src/src/opus_decoder.c \
+	third_party/opus/src/src/opus_encoder.c \
+	third_party/opus/src/src/opus_multistream.c \
+	third_party/opus/src/src/opus_multistream_decoder.c \
+	third_party/opus/src/src/opus_multistream_encoder.c \
+	third_party/opus/src/src/repacketizer.c
+# Flags passed to both C and C++ files.
+MY_CFLAGS_Debug := \
+	-fstack-protector \
+	--param=ssp-buffer-size=4 \
+	-fno-exceptions \
+	-fno-strict-aliasing \
+	-Wno-unused-parameter \
+	-Wno-missing-field-initializers \
+	-fvisibility=hidden \
+	-pipe \
+	-fPIC \
+	-Wno-unused-local-typedefs \
+	-Wno-format \
+	-m64 \
+	-march=x86-64 \
+	-ffunction-sections \
+	-funwind-tables \
+	-g \
+	-fstack-protector \
+	-fno-short-enums \
+	-finline-limit=64 \
+	-Wa,--noexecstack \
+	-U_FORTIFY_SOURCE \
+	-Wno-extra \
+	-Wno-ignored-qualifiers \
+	-Wno-type-limits \
+	-Wno-unused-but-set-variable \
+	-Wno-address \
+	-Wno-format-security \
+	-Wno-return-type \
+	-Wno-sequence-point \
+	-Os \
+	-g \
+	-fdata-sections \
+	-ffunction-sections \
+	-fomit-frame-pointer \
+	-funwind-tables
+MY_DEFS_Debug := \
+	'-DV8_DEPRECATION_WARNINGS' \
+	'-DBLINK_SCALE_FILTERS_AT_RECORD_TIME' \
+	'-D_FILE_OFFSET_BITS=64' \
+	'-DNO_TCMALLOC' \
+	'-DDISABLE_NACL' \
+	'-DCHROMIUM_BUILD' \
+	'-DUSE_LIBJPEG_TURBO=1' \
+	'-DENABLE_WEBRTC=1' \
+	'-DUSE_PROPRIETARY_CODECS' \
+	'-DENABLE_BROWSER_CDMS' \
+	'-DENABLE_CONFIGURATION_POLICY' \
+	'-DDISCARDABLE_MEMORY_ALWAYS_SUPPORTED_NATIVELY' \
+	'-DSYSTEM_NATIVELY_SIGNALS_MEMORY_PRESSURE' \
+	'-DENABLE_EGLIMAGE=1' \
+	'-DCLD_VERSION=1' \
+	'-DENABLE_PRINTING=1' \
+	'-DENABLE_MANAGED_USERS=1' \
+	'-DDATA_REDUCTION_FALLBACK_HOST="http://compress.googlezip.net:80/"' \
+	'-DDATA_REDUCTION_DEV_HOST="http://proxy-dev.googlezip.net:80/"' \
+	'-DSPDY_PROXY_AUTH_ORIGIN="https://proxy.googlezip.net:443/"' \
+	'-DDATA_REDUCTION_PROXY_PROBE_URL="http://check.googlezip.net/connect"' \
+	'-DDATA_REDUCTION_PROXY_WARMUP_URL="http://www.gstatic.com/generate_204"' \
+	'-DVIDEO_HOLE=1' \
+	'-DOPUS_BUILD' \
+	'-DOPUS_EXPORT=' \
+	'-DHAVE_LRINT' \
+	'-DHAVE_LRINTF' \
+	'-DVAR_ARRAYS' \
+	'-DUSE_OPENSSL=1' \
+	'-DUSE_OPENSSL_CERTS=1' \
+	'-DANDROID' \
+	'-D__GNU_SOURCE=1' \
+	'-DUSE_STLPORT=1' \
+	'-D_STLP_USE_PTR_SPECIALIZATIONS=1' \
+	'-DCHROME_BUILD_ID=""' \
+	'-DDYNAMIC_ANNOTATIONS_ENABLED=1' \
+	'-DWTF_USE_DYNAMIC_ANNOTATIONS=1' \
+	'-D_DEBUG'
+# Include paths placed before CFLAGS/CPPFLAGS
+LOCAL_C_INCLUDES_Debug := \
+	$(gyp_shared_intermediate_dir) \
+	$(LOCAL_PATH)/third_party/opus/src/celt \
+	$(LOCAL_PATH)/third_party/opus/src/include \
+	$(LOCAL_PATH)/third_party/opus/src/silk \
+	$(LOCAL_PATH)/third_party/opus/src/silk/float \
+	$(PWD)/frameworks/wilhelm/include \
+	$(PWD)/bionic \
+	$(PWD)/external/stlport/stlport
+# Flags passed to only C++ (and not C) files.
+LOCAL_CPPFLAGS_Debug := \
+	-fno-rtti \
+	-fno-threadsafe-statics \
+	-fvisibility-inlines-hidden \
+	-Wno-deprecated \
+	-Wno-non-virtual-dtor \
+	-Wno-sign-promo \
+	-Wno-non-virtual-dtor
+LOCAL_FDO_SUPPORT_Debug := false
+# Flags passed to both C and C++ files.
+MY_CFLAGS_Release := \
+	-fstack-protector \
+	--param=ssp-buffer-size=4 \
+	-fno-exceptions \
+	-fno-strict-aliasing \
+	-Wno-unused-parameter \
+	-Wno-missing-field-initializers \
+	-fvisibility=hidden \
+	-pipe \
+	-fPIC \
+	-Wno-unused-local-typedefs \
+	-Wno-format \
+	-m64 \
+	-march=x86-64 \
+	-ffunction-sections \
+	-funwind-tables \
+	-g \
+	-fstack-protector \
+	-fno-short-enums \
+	-finline-limit=64 \
+	-Wa,--noexecstack \
+	-U_FORTIFY_SOURCE \
+	-Wno-extra \
+	-Wno-ignored-qualifiers \
+	-Wno-type-limits \
+	-Wno-unused-but-set-variable \
+	-Wno-address \
+	-Wno-format-security \
+	-Wno-return-type \
+	-Wno-sequence-point \
+	-Os \
+	-fno-ident \
+	-fdata-sections \
+	-ffunction-sections \
+	-fomit-frame-pointer \
+	-funwind-tables
+MY_DEFS_Release := \
+	'-DV8_DEPRECATION_WARNINGS' \
+	'-DBLINK_SCALE_FILTERS_AT_RECORD_TIME' \
+	'-D_FILE_OFFSET_BITS=64' \
+	'-DNO_TCMALLOC' \
+	'-DDISABLE_NACL' \
+	'-DCHROMIUM_BUILD' \
+	'-DUSE_LIBJPEG_TURBO=1' \
+	'-DENABLE_WEBRTC=1' \
+	'-DUSE_PROPRIETARY_CODECS' \
+	'-DENABLE_BROWSER_CDMS' \
+	'-DENABLE_CONFIGURATION_POLICY' \
+	'-DDISCARDABLE_MEMORY_ALWAYS_SUPPORTED_NATIVELY' \
+	'-DSYSTEM_NATIVELY_SIGNALS_MEMORY_PRESSURE' \
+	'-DENABLE_EGLIMAGE=1' \
+	'-DCLD_VERSION=1' \
+	'-DENABLE_PRINTING=1' \
+	'-DENABLE_MANAGED_USERS=1' \
+	'-DDATA_REDUCTION_FALLBACK_HOST="http://compress.googlezip.net:80/"' \
+	'-DDATA_REDUCTION_DEV_HOST="http://proxy-dev.googlezip.net:80/"' \
+	'-DSPDY_PROXY_AUTH_ORIGIN="https://proxy.googlezip.net:443/"' \
+	'-DDATA_REDUCTION_PROXY_PROBE_URL="http://check.googlezip.net/connect"' \
+	'-DDATA_REDUCTION_PROXY_WARMUP_URL="http://www.gstatic.com/generate_204"' \
+	'-DVIDEO_HOLE=1' \
+	'-DOPUS_BUILD' \
+	'-DOPUS_EXPORT=' \
+	'-DHAVE_LRINT' \
+	'-DHAVE_LRINTF' \
+	'-DVAR_ARRAYS' \
+	'-DUSE_OPENSSL=1' \
+	'-DUSE_OPENSSL_CERTS=1' \
+	'-DANDROID' \
+	'-D__GNU_SOURCE=1' \
+	'-DUSE_STLPORT=1' \
+	'-D_STLP_USE_PTR_SPECIALIZATIONS=1' \
+	'-DCHROME_BUILD_ID=""' \
+	'-DNDEBUG' \
+	'-DNVALGRIND' \
+	'-DDYNAMIC_ANNOTATIONS_ENABLED=0'
+# Include paths placed before CFLAGS/CPPFLAGS
+LOCAL_C_INCLUDES_Release := \
+	$(gyp_shared_intermediate_dir) \
+	$(LOCAL_PATH)/third_party/opus/src/celt \
+	$(LOCAL_PATH)/third_party/opus/src/include \
+	$(LOCAL_PATH)/third_party/opus/src/silk \
+	$(LOCAL_PATH)/third_party/opus/src/silk/float \
+	$(PWD)/frameworks/wilhelm/include \
+	$(PWD)/bionic \
+	$(PWD)/external/stlport/stlport
+# Flags passed to only C++ (and not C) files.
+LOCAL_CPPFLAGS_Release := \
+	-fno-rtti \
+	-fno-threadsafe-statics \
+	-fvisibility-inlines-hidden \
+	-Wno-deprecated \
+	-Wno-non-virtual-dtor \
+	-Wno-sign-promo \
+	-Wno-non-virtual-dtor
+LOCAL_FDO_SUPPORT_Release := false
+LOCAL_CFLAGS := $(MY_CFLAGS_$(GYP_CONFIGURATION)) $(MY_DEFS_$(GYP_CONFIGURATION))
+LOCAL_FDO_SUPPORT := $(LOCAL_FDO_SUPPORT_$(GYP_CONFIGURATION))
+LOCAL_C_INCLUDES := $(GYP_COPIED_SOURCE_ORIGIN_DIRS) $(LOCAL_C_INCLUDES_$(GYP_CONFIGURATION))
+LOCAL_CPPFLAGS := $(LOCAL_CPPFLAGS_$(GYP_CONFIGURATION))
+LOCAL_ASFLAGS := $(LOCAL_CFLAGS)
+### Rules for final target.
+LOCAL_LDFLAGS_Debug := \
+	-Wl,-z,now \
+	-Wl,-z,relro \
+	-Wl,--fatal-warnings \
+	-Wl,-z,noexecstack \
+	-fPIC \
+	-m64 \
+	-fuse-ld=gold \
+	-nostdlib \
+	-Wl,--no-undefined \
+	-Wl,--exclude-libs=ALL \
+	-Wl,--warn-shared-textrel \
+	-Wl,-O1 \
+	-Wl,--as-needed
+LOCAL_LDFLAGS_Release := \
+	-Wl,-z,now \
+	-Wl,-z,relro \
+	-Wl,--fatal-warnings \
+	-Wl,-z,noexecstack \
+	-fPIC \
+	-m64 \
+	-fuse-ld=gold \
+	-nostdlib \
+	-Wl,--no-undefined \
+	-Wl,--exclude-libs=ALL \
+	-Wl,-O1 \
+	-Wl,--as-needed \
+	-Wl,--gc-sections \
+	-Wl,--warn-shared-textrel
+LOCAL_LDFLAGS := $(LOCAL_LDFLAGS_$(GYP_CONFIGURATION))
+LOCAL_STATIC_LIBRARIES :=
+# Enable grouping to fix circular references
+LOCAL_GROUP_STATIC_LIBRARIES := true
+LOCAL_SHARED_LIBRARIES := \
+	libstlport \
+	libdl
+# Add target alias to "gyp_all_modules" target.
+.PHONY: gyp_all_modules
+gyp_all_modules: third_party_opus_opus_gyp
+# Alias gyp target name.
+.PHONY: opus
+opus: third_party_opus_opus_gyp
+include $(BUILD_STATIC_LIBRARY)
