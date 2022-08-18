@@ -14,4 +14,4 @@ mkdir -p ${TARGET_PATH}/lib
 cp -r ../include ${TARGET_PATH}/include/opus
 cp ../obj/local/${TARGET_ARCH}/libopus.a ${TARGET_PATH}/lib/
 
-rm -rf /tmp/pjsip
+rm -rf /tmp/opus
